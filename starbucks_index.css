@@ -1,0 +1,133 @@
+html, body, div, input, p, h1{padding:0;margin:0;font-family: "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB", sans-serif;font-size: 12px;}
+body,html{
+    width:100%;
+    height:100%;
+    background-color:#444444 ;
+}
+a{text-decoration: none;}
+.header{
+    width:100%;
+    height:50px;
+    background: #66bb99;
+    /*background: #bb9966;*/
+    box-shadow:2px 2px 5px black;
+    min-width: 1080px;
+}
+.header h1{
+    color:#444;
+    text-align: center;
+    height:26px;
+    font-size: 18px;
+    line-height: 26px;
+}
+.header p{
+    color:#fff;
+    text-align: center;
+    height:20px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.container{
+    position: relative;
+    width:600px;
+    height: 100%;
+    margin:50px auto;
+}
+.svg {
+    width:595.28px;
+    height:100%;
+}
+
+.detail{
+    //display: inline-block;
+    width: auto;
+    min-width: 50px;
+    background: rgba(0,0,0,0.6);
+    border:1px solid #ccc;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+}
+#emSvg{
+    -webkit-filter: drop-shadow( 2px 2px 5px #000 );
+    filter: drop-shadow( 2px 2px 5px #000 ); /* Same syntax as box-shadow */
+}
+.stateName{
+    color:white;
+}
+.info{
+    //width: 50px;
+}
+.showData{
+    height:15px;
+    color:white;
+}
+.dataBoard{
+    position: absolute;
+    left:10px;
+    top:60px;
+    width:100px;
+    background: #bfbfbf;
+    border:1px solid white;
+    box-shadow:2px 2px 5px black;
+}
+
+.dataBoard p{
+    height:15px;
+    line-height:15px;
+    margin-right: 5px;
+    width:50px;
+    float:left;
+    text-align: right;
+    color:#006633;
+    /*color: #993300;*/
+}
+.dataBoard input{
+    width:45px;
+    height:15px;
+    line-height: 15px;
+    float: right;
+    background: none;
+    border:0;
+    /*color:#660033;*/
+}
+.dataBoard input:focus{
+    background: #006633;
+    outline:none;
+    color:white;
+}
+.controlBoard{
+    position: absolute;
+    right:10px;
+    top:60px;
+    width:120px;
+    height:59px;
+    background: #bfbfbf;
+    border:1px solid white;
+    box-shadow:2px 2px 5px black;
+}
+.controlBoard div{
+    height:19px;
+    width:100%;
+    text-align: center;
+    line-height: 19px;
+    font-size: 12px;
+    color:#006633 ;
+    /*color: #993300;*/
+    border-bottom: 1px solid white;
+}
+.showNameBtn:hover{
+    background: #339966;
+    color:white;
+}
+.showDataBtn{
+    border:none;
+}
+.showDataBtn:hover{
+    background: #339966;
+    color:white;
+}
+.controlBoard .clicked{
+    background: #006633;
+    color:white;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>星巴克分店指数</title>
+    <link rel="stylesheet" href="starbucks_index.css"/>
+    <script src="starbucks_index_config.js"></script>
+    <script src="starbucks_index.js"></script>
+</head>
+<body>
+<div class="header">
+    <h1>中国各省星巴克分店数</h1>
+    <!--<h1>2014年住宅商品房平均销售价格（元/平米）</h1>-->
+    <!--<p>数据来自中华人民共和国统计局</p>-->
+    <p>星巴克分店指数，由美国《商业周刊》专栏作家丹尼尔·葛洛斯(Daniel Gross)提出的理论。星巴克分店指数理论认为，
+        一个国家星巴克连锁分店愈多，受金融危机影响的程度愈高。数据来自：高德地图。</p>
+</div>
+<div class="container">
+    <div class="svg">
+        <embed id="emSvg" src="china_provinces_map.svg" width="100%"></embed>
+    </div>
+    <div class="detail" style="visibility: hidden ">
+        <p class="stateName">NewYork</p>
+        <p class="showData"></p>
+        <p classs="info"></p>
+    </div>
+    <div></div>
+</div>
+<div class="dataBoard"></div>
+<div class="controlBoard">
+    <div class="title">MANIPULATION</div>
+    <a href="javascript:void(0)" title="显示省份名称"><div class="showNameBtn">SHOWNAME</div></a>
+    <a href="javascript:void(0)" title="显示省份数据"><div class="showDataBtn">SHOWDATA</div></a>
+</div>
+
+</body>
+</html>
